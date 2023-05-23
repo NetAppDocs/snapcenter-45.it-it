@@ -1,0 +1,27 @@
+---
+permalink: install/task_disconnect_an_iscsi_session.html 
+sidebar: sidebar 
+keywords: iSCSI session 
+summary: A volte, potrebbe essere necessario disconnettere una sessione iSCSI da una destinazione con cui si hanno più sessioni. 
+---
+= Disconnettere una sessione iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A volte, potrebbe essere necessario disconnettere una sessione iSCSI da una destinazione con cui si hanno più sessioni.
+
+*Fasi*
+
+. Nel riquadro di spostamento di sinistra, fare clic su *hosts*.
+. Nella pagina host, fare clic su *iSCSI Session* (sessione iSCSI).
+. Dall'elenco a discesa *Storage Virtual Machine* (macchina virtuale di storage), selezionare la macchina virtuale di storage (SVM) per la destinazione iSCSI.
+. Dall'elenco a discesa *host*, selezionare l'host per la sessione.
+. Dall'elenco delle sessioni iSCSI, selezionare la sessione che si desidera disconnettere e fare clic su *Disconnetti sessione*.
+. Nella finestra di dialogo Disconnetti sessione, fare clic su *OK*.
++
+SnapCenter disconnette la sessione iSCSI.
+
+

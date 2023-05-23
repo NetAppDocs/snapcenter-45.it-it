@@ -1,0 +1,65 @@
+---
+permalink: install/task_register_untrusted_active_directory_domains.html 
+sidebar: sidebar 
+keywords:  
+summary: È necessario registrare Active Directory con il server SnapCenter per gestire host, utenti e gruppi di più domini Active Directory non attendibili. 
+---
+= Registrare domini Active Directory non attendibili
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È necessario registrare Active Directory con il server SnapCenter per gestire host, utenti e gruppi di più domini Active Directory non attendibili.
+
+*Cosa ti serve*
+
+* Il nome di dominio completo (FQDN) deve essere raggiungibile dal server SnapCenter.
+* Se l'FQDN non è risolvibile, gli indirizzi IP del controller di dominio forniti devono essere risolvibili dal server SnapCenter.
+* La comunicazione bidirezionale tra gli host plug-in e il server SnapCenter dovrebbe essere stata attivata.
+* La risoluzione DNS deve essere impostata dal server SnapCenter agli host plug-in e viceversa.
+
+
+*A proposito di questa attività*
+
+È possibile registrare un dominio non attendibile con l'FQDN. Se l'FQDN non è risolvibile dal server SnapCenter, è possibile registrarsi con un indirizzo IP.
+
+È possibile utilizzare l'interfaccia utente di SnapCenter o i cmdlet PowerShell per registrare un dominio non attendibile.
+
+*Fasi*
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Impostazioni*.
+. Nella pagina Impostazioni, fare clic su *Impostazioni globali*.
+. Nella pagina Global Settings (Impostazioni globali), fare clic su *Domain Settings* (Impostazioni dominio).
+. Fare clic su image:../media/add_policy_from_resourcegroup.gif[""] per registrare un nuovo dominio.
+. Nella pagina Register New Domain (Registra nuovo dominio), specificare le informazioni necessarie per la registrazione del dominio non attendibile:
++
+|===
+| Per questo campo... | Eseguire questa operazione... 
+
+
+ a| 
+Domain Name (Nome dominio)
+ a| 
+Specificare il nome NetBIOS per il dominio.
+
+
+
+ a| 
+FQDN del dominio
+ a| 
+Specificare l'FQDN e fare clic su *Resolve* (Risolvi).
+
+
+
+ a| 
+Indirizzi IP dei controller di dominio
+ a| 
+Se l'FQDN del dominio non è risolvibile dal server SnapCenter, specificare uno o più indirizzi IP del controller di dominio.
+
+Per ulteriori informazioni, vedere https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_does_not_allow_to_add_Domain_Controller_IP_for_untrusted_domain_from_GUI["Aggiungere l'IP del controller di dominio per il dominio non attendibile dalla GUI"^].
+
+|===
+. Fare clic su *OK*.
+
